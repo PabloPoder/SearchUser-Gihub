@@ -1,0 +1,21 @@
+.userInput {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #959595;
+  width: 500px;
+  height: 35px;
+  font-size: 16px;
+  background-color: #171717;
+  padding-left: 35px;
+
+  /* Icon */
+  background-image: url('/search.svg');
+  background-repeat: no-repeat;
+  background-position: 7px;
+  background-size: 20px 20px;
+  
+  color: #959595;
+}
+
+
+
