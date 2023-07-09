@@ -17,7 +17,7 @@ export const UserCard: React.FC<Props> = ({ user }) => {
     <div className={classes.wrapper}>
       <div className={classes.userInfo}>
         <div className={classes.text}>
-          <h2>{ user.name }</h2>
+          <h2><a href={ user.html_url} target='_blank' rel="noreferrer">{ user.name }</a></h2>
           <h3>{ user.login }</h3>
           <p>{ user.bio }</p>
         </div>
@@ -26,7 +26,7 @@ export const UserCard: React.FC<Props> = ({ user }) => {
           src={ user.avatar_url }
         />
       </div>
-      <div className={ classes.data}>
+      <div className={classes.data}>
         <Item
           icon={ICONS.REPOS}
           value={user.public_repos}
